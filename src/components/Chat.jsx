@@ -128,7 +128,7 @@ export function Chat({ roomId, codename, password }) {
     }
 
     useEffect(() => {
-        const interval = setInterval(LoadMessages,30000)
+        const interval = setInterval(LoadMessages,4000)
         return () => clearInterval(interval)
     },[roomId])
 
