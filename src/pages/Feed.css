@@ -1,0 +1,47 @@
+.menu {
+    background-color: black;
+    border: solid;
+    border-top: 0;
+    border-width: 1px;
+}
+
+.box-message {
+    border-color: #212529;
+    border:solid;
+    border-width: 1px;
+}
+
+.box-message:hover {
+    border-color: #212529;
+    border:solid;
+    border-width: 1px;
+    opacity: 50%;
+}
+
+.search {
+    background-color: black;
+    padding-left: 30px;
+    color: white;
+    border: solid;
+    border-color: #212529;
+    border-width: 1px;
+}
+
+.search:focus {
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.box-msg {
+    border: solid;
+    border-width: 1px;
+    border-color: #212529;
+}
+
+.box-msg:hover {
+    border: solid;
+    border-width: 1px;
+    border-color: #212529;
+    opacity: 50%;
+}
