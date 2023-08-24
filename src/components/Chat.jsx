@@ -184,7 +184,7 @@ export function Chat({ roomId, codename, password }) {
             {
                 roomId === "" ? (<></>) :
                     <>
-                        <div className="d-flex flex-column w-100" style={{ position: 'relative', minHeight: '400px' }}>
+                        <div className="d-flex flex-column w-75" style={{ position: 'relative', minHeight: '500px' }}>
                             <div className="header-user opacity-100 d-flex flex-column w-100">
                                 <div className="d-flex w-100 p-2 align-items-center gap-1" style={{ height: '66px' }}>
                                     {status &&
@@ -201,7 +201,7 @@ export function Chat({ roomId, codename, password }) {
                                     </strong>
                                 </div>
                             </div>
-                            <div onClick={handleOutsideClick} className="overflow-scroll flex-column gap-2" style={{ height: '100%', maxHeight: '620px' }}>
+                            <div onClick={handleOutsideClick} className="overflow-scroll flex-column gap-2" style={{ height: '550px', maxHeight: '620px' }}>
                                 {
                                     message &&
                                     message.map((element) => (
