@@ -1,19 +1,28 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './Lateral.css'
+import instance from "../config/base";
 
-export function Lateral({socket}) {
+export function Lateral({socket,id,password}) {
     const navigate = useNavigate();
-
+    
     const exit = () => {
         socket.close()
         navigate(`/`)
+
     }
     
     window.addEventListener("beforeunload", () => {
         if (socket.readyState === WebSocket.OPEN) {
           socket.close();
         }
+        instance.put(`/user/update_status`, {
+            codename: id,
+            password: password,
+            status: "offline"
+        })
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
       });
 
     return (

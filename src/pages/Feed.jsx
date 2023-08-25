@@ -167,7 +167,7 @@ export function Feed() {
     return (
         <div>
             <div className="d-flex flex-row">
-                <Lateral socket={socket} />
+                <Lateral socket={socket} id={id} password={password} />
                 <ul className="menu nav flex-column min-vh-100 p-1" style={{ width: '600px' }}>
                     <div className="p-4 d-flex flex-column w-100 justify-content-start gap-3" style={{ color: 'white' }}>
                         <div className="fs-5">
